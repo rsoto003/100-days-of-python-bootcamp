@@ -6,14 +6,19 @@
 # print('hello ' + input('what is your name?') + '!')
 
 # d1.9
-#name = input('what is your name?')
-#print('hello' + name + ', nice to meet you.')
-#print(len(input('what is your favorite food?')))
+# name = input('what is your name?')
+# print('hello' + name + ', nice to meet you.')
+# print(len(input('what is your favorite food?')))
 
-username = input('what is your name?')
-length = len(username)
-print(length)
+# username = input('what is your name?')
+# length = len(username)
+# print(length)
 
+# d1.11 - band name generator project
+city_name = input('what is the name of the city you grew up in?\n\t')
+pet_name = input('what is the name of your pet?\n\t')
+
+print('Your band name is: The ' + city_name + ' ' + pet_name + '\'s!')
 
 
 
