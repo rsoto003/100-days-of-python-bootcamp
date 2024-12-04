@@ -57,9 +57,9 @@ print(f"Your score is {score}, due to your {height}. Results for winning: {is_wi
 
 # Tip Calculator Project
 print('Welcome to the tip calculator!')
-total_bill_amount = float(input("What was the total bill?\n\t"))
-tip_percent = int(input("How much tip would you like to give? We have these set options: 10, 12, or 15.\n\t")) / 100
-total_guests_splitting_tab = int(input("How many people to split the bill?\n\t"))
+total_bill_amount = float(input("What was the total bill? $"))
+tip_percent = float(input("How much tip would you like to give? 10, 12, or 15 ")) / 100 + 1
+total_guests_splitting_tab = int(input("How many people to split the bill? "))
 
-amount_to_be_paid_by_each_guest = (total_bill_amount * tip_percent + total_bill_amount) / total_guests_splitting_tab
+amount_to_be_paid_by_each_guest = (total_bill_amount / total_guests_splitting_tab) * tip_percent
 print(f"Each person needs to pay: ${round(amount_to_be_paid_by_each_guest, 2)}")
