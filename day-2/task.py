@@ -54,3 +54,12 @@ height = 1.8
 is_winning = True
 
 print(f"Your score is {score}, due to your {height}. Results for winning: {is_winning} ")
+
+# Tip Calculator Project
+print('Welcome to the tip calculator!')
+total_bill_amount = float(input("What was the total bill?\n\t"))
+tip_percent = int(input("How much tip would you like to give? We have these set options: 10, 12, or 15.\n\t")) / 100
+total_guests_splitting_tab = int(input("How many people to split the bill?\n\t"))
+
+amount_to_be_paid_by_each_guest = (total_bill_amount * tip_percent + total_bill_amount) / total_guests_splitting_tab
+print(f"Each person needs to pay: ${round(amount_to_be_paid_by_each_guest, 2)}")
