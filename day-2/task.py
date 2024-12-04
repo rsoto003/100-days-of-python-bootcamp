@@ -47,3 +47,10 @@ weight = 214
 height_in_inches = 68
 bmi = (weight / height_in_inches ** 2) * 703
 print(str(round(bmi, 2)) + '%')
+
+# F strings
+score = 0
+height = 1.8
+is_winning = True
+
+print(f"Your score is {score}, due to your {height}. Results for winning: {is_winning} ")
