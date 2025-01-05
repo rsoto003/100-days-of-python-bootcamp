@@ -1,5 +1,4 @@
 water_level = 50
-
 if water_level > 80:
     print('drain water initiated')
 else:
@@ -7,7 +6,6 @@ else:
 
 
 print('welcome to the rollercoaster ride')
-
 height = int(input('what is your height in centimeters?\n'))
 
 if height >= 120:
