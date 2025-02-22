@@ -12,18 +12,18 @@ price = 0
 
 if size == 'S':
     price += 15
-    if pepperoni == 'Y':
-        price += 2
 elif size == 'M':
     price += 20
-    if pepperoni == 'Y':
-        price += 3
 elif size == 'L':
     price += 25
-    if pepperoni == 'Y':
-        price += 3
 else:
     pepperoni = input("Please enter a valid size. You can choose S or M or L: ") # need to figure out how to reloop this process and start over if user selects invalid pizza size.
+
+if pepperoni == 'Y':
+    if size == 'S':
+        price += 2
+    else:
+        price += 3
 
 if cheese == 'Y':
     price += 1
