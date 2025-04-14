@@ -1,3 +1,11 @@
+#########################################################################
+# TODOS:
+# 1. need to figure out how to kick user from program if initial logic is met:
+#    - user is too small to ride the ride by themselves
+#    - user does not have parent to accompany them.
+#########################################################################
+
+
 print('welcome to the rollercoaster ride ---')
 
 height = int(input('what is your height in centimeters?\t\n - '))
@@ -10,6 +18,9 @@ else:
     has_parent = input("Do you have a parent to ride the ride with you? Y or N\t\n - ")
     if has_parent.lower() == 'y':
         can_ride = True
+    else:
+        print("sorry, you can't ride the ride....")
+
 
 if can_ride:
     age = int(input('what is your age?\t\n - '))
@@ -19,7 +30,7 @@ if can_ride:
         price = 5
     elif age <= 18:
         price = 7
-    elif age >= 45 and age <= 55:
+    elif 45 <= age <= 55:
         print('The ride is on us!')
     else:
         price = 12
