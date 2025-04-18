@@ -63,3 +63,4 @@ total_guests_splitting_tab = int(input("How many people to split the bill? "))
 
 amount_to_be_paid_by_each_guest = (total_bill_amount / total_guests_splitting_tab) * tip_percent
 print(f"Each person needs to pay: ${round(amount_to_be_paid_by_each_guest, 2)}")
+
