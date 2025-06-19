@@ -1,31 +1,31 @@
 import random
-
-rock = """
+print("""
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-"""
+""")
 
-paper = """
+print("""
      _______
 ---'    ____)____
            ______)
           _______)
          _______)
 ---.__________)
-"""
+""")
 
-scissors = """
+print("""
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-"""
+""")
+
 choices = ['Rock', 'Paper', 'Scissors']
 game = []
 user_choice = input('Rock, paper, or scissors, Shoot! \n> ').capitalize()
